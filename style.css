@@ -16,15 +16,17 @@ h1 {
 
 .gallery {
   display: flex;
-  flex-direction: column; /* זה עושה תמונה אחת בכל שורה */
+  flex-direction: column; /* כל תמונה תופס את השורה */
   align-items: center;
-  padding: 20px;
-  gap: 20px;
+  padding: 0;
+  gap: 0;
 }
 
 .gallery img {
-  max-width: 90%;
+  width: 100%; /* כל תמונה תופס את רוחב המסך */
   height: auto;
+  display: block;
+  margin-bottom: 20px; /* רווח בין התמונות */
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
